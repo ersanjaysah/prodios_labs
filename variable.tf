@@ -16,6 +16,3 @@ variable "private_subnet_cidr" {}
 variable "private_subnet_AZ" {}
 variable "ports" {}
 variable "aws_instance_type" {}
-
-// load balancers variables
-variable "lb_name" {}

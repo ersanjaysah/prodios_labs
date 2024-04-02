@@ -29,7 +29,3 @@ output "nat_GW_ID" {
 output "pvt_rT_id" {
   value = aws_route_table.private_route_table.id
 }
-
-output "data_Persist" {
-  value = data.aws_ami.ubuntu.id
-}
