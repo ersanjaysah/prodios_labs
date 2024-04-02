@@ -25,6 +25,8 @@ resource "aws_launch_configuration" "my_launch_config" {
   name          = "my-launch-config"
   image_id      = "ami-010b74bc1a8b29122" # Replace with your AMI ID
   instance_type = "t3.micro"     # Replace with your desired instance type
+  key_name= "newkey"
+  user_data = file("ec2-init.sh")
 }
 
 # Create an auto scaling group
