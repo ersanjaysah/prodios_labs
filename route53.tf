@@ -2,7 +2,7 @@
 
 # Create a hosted zone for your domain
 resource "aws_route53_zone" "mydns" {
-  name = "www.prodioslabs.com"  # Replace with your domain name
+  name = "prodioslabs.com"  # Replace with your domain name
 }
 
 
