@@ -13,6 +13,9 @@ output "public_subnet_id" {
 output "route_table_id" {
   value = aws_route_table.custom_route_table.id
 }
+output "alb_dns_name" {
+  value = aws_lb.my_load_balancer.dns_name
+}
 
 output "private_subnet_id" {
   value = aws_subnet.private_subnet.id
