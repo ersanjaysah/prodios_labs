@@ -1,4 +1,4 @@
-# Project Deployment Infrastructure Setup
+# Assignment Deployment Infrastructure Setup
 
 This repository https://github.com/ersanjaysah/prodios_labs.git contains Terraform code to set up a full AWS infrastructure for deploying Assignment. 
 
