@@ -1,17 +1,17 @@
 resource "aws_s3_bucket" "upload_file" {
   bucket = "infinix-hot-acer-apple-bucket"
-#   policy = <<EOF
-# {
-#   "Version": "2012-10-17",
-#   "Statement": [
-#     {
-#       "Effect": "Allow",
-#       "Action": ["s3:GetObject", "s3:PutObject"],
-#       "Resource": "arn:aws:s3:::testbucket/*"
-#     }
-#   ]
-# }
-# EOF
+  policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:GetObject", "s3:PutObject"],
+      "Resource": "arn:aws:s3:::testbucket/*"
+    }
+  ]
+}
+EOF
 }
 
 resource "aws_s3_bucket_object" "example_object" {
